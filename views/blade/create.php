@@ -1,4 +1,4 @@
-<ul class="breadcrumbs six columns">
+<ul class="breadcrumbs">
 <?php if( ! empty($belongs_to)): ?>
 		<li>
 			<a href="{{URL::to('<?php echo $url[$belongs_to[0]]; ?>')}}"><?php echo ucwords(str_replace('_', ' ', Str::plural($belongs_to[0]))); ?></a> 
