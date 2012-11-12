@@ -1,6 +1,6 @@
 # Note from Laur
 
-Modified the generated views to user foundation instead of twitter bootstrap
+Modified the generated views to use foundation instead of twitter bootstrap
 
 
 
