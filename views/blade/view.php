@@ -1,18 +1,16 @@
-<div class="span16">
-	<ul class="breadcrumb span6">
+<ul class="breadcrumbs six columns">
 <?php if( ! empty($belongs_to)): ?>
 		<li>
-			<a href="{{URL::to('<?php echo $url[$belongs_to[0]]; ?>/view/'.$<?php echo $singular; ?>-><?php echo $belongs_to[0]; ?>->id)}}"><?php echo ucwords(str_replace('_', ' ', $belongs_to[0])); ?></a> <span class="divider">/</span>
+			<a href="{{URL::to('<?php echo $url[$belongs_to[0]]; ?>/view/'.$<?php echo $singular; ?>-><?php echo $belongs_to[0]; ?>->id)}}"><?php echo ucwords(str_replace('_', ' ', $belongs_to[0])); ?></a> 
 		</li>
 <?php endif; ?>
 		<li>
-			<a href="{{URL::to('<?php echo $nested_path.$plural; ?>')}}"><?php echo str_replace('_', ' ', $plural_class); ?></a> <span class="divider">/</span>
+			<a href="{{URL::to('<?php echo $nested_path.$plural; ?>')}}"><?php echo str_replace('_', ' ', $plural_class); ?></a> 
 		</li>
-		<li class="active">Viewing <?php echo str_replace('_', ' ', $singular_class); ?></li>
+		<li class="current"><span>Viewing <?php echo str_replace('_', ' ', $singular_class); ?></span></li>
 	</ul>
-</div>
 
-<div class="span16">
+<div class="twelve columns">
 <?php foreach($fields as $field => $type): ?>
 <p>
 	<strong><?php echo ucfirst(str_replace('_', ' ', $field)); ?>:</strong>
@@ -57,6 +55,6 @@
 	</table>
 @endif
 
-<p><a class="btn success" href="{{URL::to('<?php echo $url[$model]; ?>/create/'.$<?php echo $singular; ?>->id)}}">Create new <?php echo str_replace('_', ' ', $model); ?></a></p>
+<p><a class="button" href="{{URL::to('<?php echo $url[$model]; ?>/create/'.$<?php echo $singular; ?>->id)}}">Create new <?php echo str_replace('_', ' ', $model); ?></a></p>
 <?php endforeach; ?>
 <?php endforeach; ?>

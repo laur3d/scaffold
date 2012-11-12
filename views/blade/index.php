@@ -46,4 +46,4 @@
 	</table>
 @endif
 
-<p><a class="btn success" href="{{URL::to('<?php echo $nested_path.$plural; ?>/create')}}">Create new <?php echo str_replace('_', ' ', $singular_class); ?></a></p>
+<p><a class="button" href="{{URL::to('<?php echo $nested_path.$plural; ?>/create')}}">Create new <?php echo str_replace('_', ' ', $singular_class); ?></a></p>

@@ -1,3 +1,9 @@
+# Note from Laur
+
+Modified the generated views to user foundation instead of twitter bootstrap
+
+
+
 # Scaffold Laravel Bundle
 
 Easily create scaffolds to manage your database.
